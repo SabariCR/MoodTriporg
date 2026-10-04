@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Trip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lock">
+
+<!-- PAGE 1 : WELCOME -->
+<section id="home">
+  <div class="deco" aria-hidden="true">
+    <div class="sun"></div>
+    <svg class="hills" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#1f9455" fill-opacity=".55" d="M0,160 C240,60 420,60 640,150 C860,240 1080,80 1440,130 L1440,320 L0,320Z"/>
+      <path fill="#127a44" fill-opacity=".8" d="M0,220 C200,140 400,150 620,210 C860,275 1100,150 1440,210 L1440,320 L0,320Z"/>
+      <path fill="#0a3d24" d="M0,270 C260,210 520,230 760,265 C1000,300 1220,230 1440,265 L1440,320 L0,320Z"/>
+    </svg>
+    <span class="fl" style="left:8%;top:9%">🍃</span>
+    <span class="fl" style="left:72%;top:8%;animation-delay:-2s">✨</span>
+    <span class="fl" style="left:84%;top:54%;animation-delay:-4s">😄</span>
+    <span class="fl" style="left:6%;top:56%;animation-delay:-1s">😌</span>
+    <span class="fl" style="left:20%;top:68%;animation-delay:-3s">🌿</span>
+    <span class="fl" style="left:76%;top:70%;animation-delay:-5s">🧘</span>
+  </div>
+  <div class="text"><h1>Explore Your<br>Favorite Journey</h1><p>Let's Make Our Life Better!</p></div>
+  <div class="bottom">
+    <div class="up"><div>⌃</div><div>⌃</div></div>
+    <button type="button" class="go" id="go" onclick="openApp()">Go <span>→</span></button>
+  </div>
+</section>
+
+<!-- APP -->
+<header class="top">
+  <button type="button" id="back" aria-label="Back">←</button>
+  <button type="button" id="loc" title="Tap to refresh location">📍 Locating…</button>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+</header>
+
+<main>
+  <section class="step on" id="s1">
+    <h2>How are you feeling today?</h2>
+    <p class="sub">Pick a mood and we'll find places near you.</p>
+    <div class="grid moods" id="moods"></div>
+  </section>
+
+  <section class="step" id="s2">
+    <h2 id="t2"></h2>
+    <p class="sub">Tap a place to plan your trip.</p>
+    <div id="st" class="status"></div>
+    <div class="grid places" id="places"></div>
+  </section>
+
+  <section class="step" id="s3">
+    <h2>Plan your trip</h2>
+    <div class="card picked" id="pl"></div>
+    <h3>How many people?</h3>
+    <div class="stepper">
+      <button type="button" id="minus" aria-label="Fewer people">−</button><output id="ppl">2</output><button type="button" id="plus" aria-label="More people">+</button>
+    </div>
+    <h3>Trip options</h3>
+    <div class="opts">
+      <label><input type="checkbox" id="rt" checked>Include return trip</label>
+      <select id="sty" aria-label="Spending style">
+        <option value="0.7">Saver spending</option><option value="1" selected>Normal spending</option><option value="1.6">Premium spending</option>
+      </select>
+    </div>
+    <h3>Which vehicle?</h3>
+    <div class="advice" id="adv"></div>
+    <div class="vehicles" id="veh"></div>
+    <button type="button" class="cta" id="toBudget">See my budget</button>
+  </section>
+
+  <section class="step" id="s4">
+    <h2>Your trip budget</h2>
+    <div class="card" id="sum"></div>
+    <p class="note">Fares are estimates for Tamil Nadu (auto: ₹50 for the first 1.8 km + ₹18/km, cab: ₹50 + ₹14/km, bus: ₹5 + ₹1.2/km per person, bike: fuel only). Real prices can differ.</p>
+    <div class="actions">
+      <a class="cta" id="dir" target="_blank" rel="noopener">Open directions in Google Maps</a>
+      <button type="button" class="ghost" id="again">Plan another trip</button>
+    </div>
+  </section>
+</main>
+<div id="toast" role="status"></div>
+
+<!-- SCRIPT 1: tiny script that opens the app when Go is tapped.
+     It is separate on purpose, so Go works even if something else fails. -->
+<!-- SCRIPT 2: the main app -->
+  <script src="script.js"></script>
+</body>
+</html>
