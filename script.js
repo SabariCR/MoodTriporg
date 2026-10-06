@@ -1,9 +1,7 @@
 function openApp() {
   document.getElementById('home').classList.add('hide');
   document.body.classList.remove('lock');
-  if (typeof startLocation === 'function') {
-    startLocation();   // defined in the main script below
-  }
+  if (typeof startLocation === 'function') startLocation();
 }
 
 /* =====================================================
