@@ -85,7 +85,7 @@ const MADURAI_PLACES = [
   spot('Meenakshi Amman Temple', 9.9195, 78.1193, 'Temple', '🛕', 0, 'happy relaxed sad alone', 'Meenakshi_Temple,_Madurai'),
   spot('Thirumalai Nayakkar Mahal', 9.9158, 78.1286, 'Palace', '🏛️', 50, 'happy romantic social', 'Thirumalai_Nayakkar_Palace'),
   spot('Gandhi Memorial Museum', 9.9333, 78.1366, 'Museum', '🏛️', 0, 'focused relaxed alone', 'Gandhi_Memorial_Museum'),
-  spot('Teppakulam', 9.9300, 78.1450, 'Lake / tank', '💧', 0, 'happy relaxed romantic sad social', 'Mariamman_Teppakulam'),
+  spot('Vandiyur Mariamman Teppakulam', 9.9300, 78.1450, 'Lake / tank', '💧', 0, 'happy relaxed romantic sad social', 'Mariamman_Teppakulam'),
   spot('Rajaji Park', 9.9320, 78.1370, 'Park', '🌳', 10, 'happy romantic relaxed alone', ''),
   spot('Alagar Kovil & hills', 10.0743, 78.2064, 'Hill / temple', '⛰️', 0, 'adventurous relaxed sad', 'Alagar_Koil'),
   spot('Thiruparankundram Hill Temple', 9.8786, 78.0711, 'Hill temple', '⛰️', 0, 'adventurous relaxed sad', 'Thiruparankundram'),
@@ -93,9 +93,8 @@ const MADURAI_PLACES = [
   spot('Famous Jigarthanda', 9.9180, 78.1170, 'Dessert cafe', '☕', 80, 'happy', ''),
   spot('Kalaignar Centenary Library', 9.9470, 78.1440, 'Library', '📚', 0, 'focused alone', 'Kalaignar_Centenary_Library'),
   spot('Samanar Hills', 9.922325, 78.049018, 'Hill', '⛰️', 100, 'relaxed alone', ''),
-  spot('Elite Cafe', 9.937309, 78.145251, 'Cafe', '☕', 100, 'happy romantic alone', ''),
-  spot('Sundaram Park', 9.9338431, 78.1498581, 'Park', '🌳', 40, 'romantic alone', 'Sundaram_Park'),
-  spot('Vishaal De Mall', 9.9389427, 78.1358690, 'mall', '🏛️', 100, 'happy romantic', 'Vishal_Mall) 
+  spot('Elite Cafe', 9.937309, 78.145251, 'Cafe', '☕', 100, 'happy romantic alone', '')
+ 
 ];
 
 // Vehicles.
